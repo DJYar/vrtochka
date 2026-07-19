@@ -1,0 +1,32 @@
+{
+  "name": "vr-club",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "nuxt typecheck",
+    "test:e2e": "playwright test",
+    "check": "npm run lint && npm run typecheck && npm run build",
+    "build:pages": "nuxt build --preset github_pages"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^1.16.0",
+    "@nuxt/image": "^2.0.0",
+    "eslint": "^10.7.0",
+    "nuxt": "^4.5.0",
+    "swiper": "^14.0.5",
+    "vue": "^3.5.40",
+    "vue-router": "^5.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "sass": "^1.101.0",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.7"
+  }
+}

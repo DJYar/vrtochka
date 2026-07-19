@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0;
+  line-height: 1.04;
+}
+
+h1 {
+  max-width: 920px;
+  font-size: clamp(2.35rem, 6vw, 5.7rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 4.2rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 1.65rem);
+}
+
+p {
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+.eyebrow {
+  color: var(--color-secondary);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
