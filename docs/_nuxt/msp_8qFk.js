@@ -1,0 +1,1 @@
+import{E as e,N as t,it as n,q as r}from"./Dx1Cc6n0.js";import{u as i}from"./B4AxvGSm.js";var a=t({__name:`index`,async setup(t){let a,o;return[a,o]=n(()=>i(`/ua`,{redirectCode:301})),await a,o(),(t,n)=>(r(),e(`div`))}});export{a as default};

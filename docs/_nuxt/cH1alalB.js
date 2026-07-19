@@ -1,0 +1,1 @@
+import{E as e,X as t,q as n}from"./Dx1Cc6n0.js";import{t as r}from"./dMzu5WQ5.js";var i={},a={class:`container`};function o(r,i){return n(),e(`div`,a,[t(r.$slots,`default`,{},void 0,!0)])}var s=r(i,[[`render`,o],[`__scopeId`,`data-v-b85090e2`]]);export{s as t};

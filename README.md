@@ -55,3 +55,37 @@ npx serve .output/public
 ```
 
 При использовании собственного домена задайте `NUXT_APP_BASE_URL=/` и полный домен в `NUXT_PUBLIC_SITE_URL`, затем адаптируйте шаг `Configure Nuxt public paths` в workflow.
+
+## GitHub Pages без Actions: classic branch deployment
+
+Проект умеет собирать готовую статику локально в каталог `docs`.
+Скрипт определяет GitHub owner/repository из `remote.origin`, выставляет корректный Nuxt `baseURL`, запускает статическую сборку и создаёт `docs/.nojekyll`.
+
+```bash
+npm install
+npm run pages:build
+git add docs package.json package-lock.json scripts/build-classic-pages.mjs
+git commit -m "Build GitHub Pages"
+git push
+```
+
+Затем в GitHub откройте **Settings → Pages** и выберите:
+
+- Source: `Deploy from a branch`
+- Branch: `main`
+- Folder: `/docs`
+
+Если Git remote ещё не настроен, PowerShell:
+
+```powershell
+$env:PAGES_OWNER="YOUR_GITHUB_LOGIN"
+$env:PAGES_REPO="YOUR_REPOSITORY"
+npm run pages:build
+```
+
+Для собственного домена:
+
+```powershell
+$env:PAGES_CUSTOM_DOMAIN="example.com"
+npm run pages:build
+```

@@ -1,0 +1,1 @@
+import{a as e}from"./Dx1Cc6n0.js";import{i as t,r as n}from"./dMzu5WQ5.js";var r=(r,i,a)=>{let o=`${e().public.siteUrl}${r}`;t({title:i,description:a,ogTitle:i,ogDescription:a,ogUrl:o,ogType:`website`}),n({link:[{rel:`canonical`,href:o}]})};export{r as t};

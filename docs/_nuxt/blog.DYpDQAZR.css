@@ -1,0 +1,1 @@
+.blog-list[data-v-470a46ae]{grid-template-columns:repeat(3,1fr);gap:18px;display:grid}.blog-list__item[data-v-470a46ae]{border-radius:var(--radius-medium);gap:14px;padding:22px;display:grid}.blog-list__item h2[data-v-470a46ae]{font-size:1.35rem}@media (width<=820px){.blog-list[data-v-470a46ae]{grid-template-columns:1fr}}
